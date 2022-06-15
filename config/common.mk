@@ -207,6 +207,8 @@ PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-im
 
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Launcher3QuickStep \
+    Settings \
     SystemUI
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
