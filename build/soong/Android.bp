@@ -94,6 +94,26 @@ camera_needs_client_info_lib_oplus {
 }
 
 soong_config_module_type {
+    name: "aapt_version_code",
+    module_type: "java_defaults",
+    config_namespace: "xtendedGlobalVars",
+    value_variables: ["aapt_version_code"],
+    properties: ["aaptflags"],
+}
+
+aapt_version_code {
+    name: "aapt_version_code_defaults",
+    soong_config_variables: {
+        aapt_version_code: {
+            aaptflags: [
+                "--version-code",
+                "%s",
+            ],
+        },
+    },
+}
+
+soong_config_module_type {
     name: "gralloc_10_usage_bits",
     module_type: "cc_defaults",
     config_namespace: "xtendedGlobalVars",
@@ -219,7 +239,7 @@ egl_display_array {
 soong_config_module_type {
     name: "health_charging_control",
     module_type: "cc_defaults",
-    config_namespace: "lineageGlobalVars",
+    config_namespace: "xtendedGlobalVars",
     bool_variables: [
         "target_health_charging_control_supports_toggle",
         "target_health_charging_control_supports_bypass",
