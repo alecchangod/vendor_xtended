@@ -108,7 +108,7 @@ PRODUCT_COPY_FILES += \
 
 # Lineage Health
 PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/org.lineageos.health.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.health.xml
+    vendor/xtended/config/permissions/org.lineageos.health.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.health.xml
 
 # Google dialer call recording
 PRODUCT_COPY_FILES += \
