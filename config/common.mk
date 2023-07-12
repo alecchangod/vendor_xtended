@@ -237,6 +237,6 @@ PRODUCT_COPY_FILES += \
 endif
 
 # OTA Updater
-PRODUCT_PACKAGES +=
+PRODUCT_PACKAGES += \
     Updater
 
