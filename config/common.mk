@@ -50,7 +50,7 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/xtended/prebuilt/common/etc/init/init.xtended-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.xtended-system_ext.rc \
     vendor/xtended/prebuilt/common/etc/init/smartcharge-init.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/smartcharge-init.rc
-    
+
 # Enable gestural navigation overlay to match default navigation mode
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
@@ -108,7 +108,7 @@ PRODUCT_COPY_FILES += \
 
 # Lineage Health
 PRODUCT_COPY_FILES += \
-    vendor/xtended/config/permissions/org.lineageos.health.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.health.xml
+    vendor/xtended/prebuilt/common/etc/permissions/org.lineageos.health.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.health.xml
 
 # Google dialer call recording
 PRODUCT_COPY_FILES += \
