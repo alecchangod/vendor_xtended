@@ -164,4 +164,4 @@ else
 	echo 'Consider adding official support by reading the documentation at https://github.com/Project-Xtended/manifest/tree/xt#project-xtended-official-requirements'
 fi
 
-echo ""
+cat $output
