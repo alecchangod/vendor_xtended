@@ -25,6 +25,7 @@ if [ -f $output ]; then
 fi
 
 echo "Generating JSON file data for OTA support..."
+echo $1 $2 $3
 
 if [ -f $existingOTAjson ]; then
 	#get data from already existing device json
